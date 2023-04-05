@@ -1,0 +1,29 @@
+@import "../utils/globals";
+@import "../utils/vars";
+
+.services {
+    display: flex;
+    flex-direction: column;
+
+    &__grid ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__item {
+        position: relative;
+    }
+}
+
+.label {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 2px;
+} 

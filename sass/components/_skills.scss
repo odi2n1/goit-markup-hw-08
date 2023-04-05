@@ -1,0 +1,15 @@
+@import "../utils/globals";
+@import "../utils/vars";
+
+.skills {
+    display: flex;
+    gap: 30px;
+    align-content: center;
+    justify-content: center
+}
+.skills__item {
+    background: $grey-color;
+    border-radius: 4px;
+    padding: 33px 100px;
+    margin-bottom: 30px;
+}

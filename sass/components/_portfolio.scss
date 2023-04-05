@@ -1,0 +1,98 @@
+@import "../utils/globals";
+@import "../utils/vars";
+
+.portofolio-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 4px;
+    padding: 94px 0px 50px 0px;
+
+    & li button {
+        background: $grey-color;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $brand-color;
+        border: none;
+        padding: 6px 22px;
+    }
+    & li button:hover,
+    & li button:focus {
+        background: $highlight-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        color: #FFFFFF;
+        transition: $transition;
+    }
+}
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 94px;
+}
+
+.grid__item:hover,
+.grid__item:focus {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    transition: $transition;
+}
+.grid__card {
+    position: relative;
+    overflow: hidden;
+    &:hover .grid__overlay {
+        transform: translateY(0);
+        background: rgba(33, 150, 243, 0.9);
+        transition: $transition;
+    }
+}
+.grid__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding: 63px 24px 91px 24px;
+}
+
+.grid__subtitle,
+.grid__description {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+.grid__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $brand-color;
+    padding: 20px 24px 4px 24px;
+    border-bottom: none;
+    border-top: none;
+}
+.grid__description {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: $text-description-color;
+    padding: 0px 24px 20px 24px;
+}
+.grid__description {
+    border-top: none;
+}
+
+

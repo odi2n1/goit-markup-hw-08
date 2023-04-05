@@ -1,0 +1,162 @@
+@import "../utils/globals";
+@import "../utils/vars";
+
+.footer {
+    background: $footer-color;
+    display: flex;
+    &__section {
+        display: flex;
+        flex-direction: row;
+        margin: 60px 0px;
+    }
+}
+.footer__grid {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+.footer__logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2; 
+    letter-spacing: 0.03em;
+    color: $highlight-color;
+    padding-bottom: 28px;
+    &::after {
+        content: "Studio";
+        color: #FFFFFF;
+    }
+}
+.footer__grid {
+    display: flex;
+    flex-direction: column;
+    padding-top: 28px;
+    gap: 12px;
+}
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 28px;
+    gap: 12px; 
+    &:hover li a:hover,
+    &:focus li a:focus {
+        color: $highlight-color;
+        fill: $highlight-color;
+        transition: $transition;
+    }
+}
+.footer__adress {
+    font-style: normal;
+    color: #FFFFFF;
+}
+.footer__contact {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
+.footer__socials {
+    margin: 13px 0px 0px 94px;
+}
+.footer__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+.footer__list {
+    display: flex;
+    gap: 10px;
+    .footer__item {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        fill: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__item:hover,
+    .footer__item:focus {
+        background-color: $highlight-color;
+        transition: $transition;
+    }
+}
+.footer__submit {
+    display: flex;
+    margin-left: 93px;
+}
+.footer__form {
+    display: flex;
+    flex-direction: column;
+}
+.footer__form span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 20px 0px 20px 0px;
+    margin-top: 27px;
+}
+
+.footer__label {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.footer__label input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $footer-color;
+    height: 50px;
+    padding: 15px 0px 15px 16px;
+    width: 358px;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+.footer__label button {
+    width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: $highlight-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-left: 43px;
+    border-width: 0px;
+    height: 50px;
+}
+
+.footer__label button:hover {
+    cursor: pointer;
+}
+
+.footer__label input:focus {
+    border: 1px solid $highlight-color;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: $transition;
+}
+.footer__svg {
+    margin: 25px;
+}
