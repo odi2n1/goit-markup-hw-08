@@ -1,0 +1,88 @@
+@import "../utils/vars";
+
+.description {
+  padding-bottom: 60px;
+
+  &-block {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-inline-start: 0px;
+    flex-wrap: wrap;
+
+    &__icon {
+      display: flex;
+      width: 450px;
+      height: 120px;
+      border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+      background: $color3;
+    }
+
+    &__title {
+      display: flex;
+      padding-top: 30px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.142;
+      letter-spacing: 0.03em;
+      color: $color6;
+    }
+    &__text {
+      padding-top: 10px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      width: 450px;
+      height: 75px;
+      color: $color7;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description-block {
+    &-block {
+      flex-wrap: wrap;
+    }
+
+    &__icon {
+      width: 354px;
+    }
+
+    &__title {
+      display: block;
+    }
+
+    &__text {
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      width: 354px;
+      height: 75px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description-block {
+    &-block {
+      flex-wrap: wrap;
+    }
+
+    &__icon {
+      width: 270px;
+    }
+
+    &__title {
+      display: block;
+    }
+
+    &__text {
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      width: 270px;
+      height: 75px;
+    }
+  }
+}

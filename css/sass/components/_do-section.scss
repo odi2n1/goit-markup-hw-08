@@ -1,0 +1,48 @@
+@import "../utils/vars";
+
+.do-section {
+  &-list {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    &__item {
+      position: relative;
+    }
+
+    &__text {
+      position: absolute;
+      width: 370px;
+      height: 70px;
+      background: rgba(47, 48, 58, 0.8);
+      font-weight: bold;
+      line-height: 0.228;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $primarycolor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 1%;
+    }
+  }
+}
+
+.center-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: $color6;
+  padding: 0px 0px 50px 0px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  .do-section {
+    display: none;
+  }
+}

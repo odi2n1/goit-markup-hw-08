@@ -1,0 +1,114 @@
+@import "../utils/vars";
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 94px 0px 56px 0px;
+  }
+
+  .button-portfolio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+
+    &:hover {
+      color: $primarycolor;
+      background: $secondarycolor;
+      border-color: $secondarycolor;
+      border-radius: 4px;
+      box-shadow: $color9;
+      transition: $transition;
+      transition-duration: 250ms;
+    }
+
+    &:focus {
+      color: $primarycolor;
+      background: $secondarycolor;
+      border-color: $secondarycolor;
+      border-radius: 4px;
+      box-shadow: $color9;
+      transition: $transition;
+      transition-duration: 250ms;
+    }
+  }
+
+  .products-components {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0px auto 94px auto;
+
+    &__cards {
+      border: 1px solid #eeeeee;
+
+      .transition-container {
+        width: 370px;
+        height: 294px;
+        overflow: hidden;
+        position: relative;
+
+        &__portfolio {
+          width: 370px;
+          height: 294px;
+          position: absolute;
+          background: rgba(33, 150, 243, 0.9);
+          transform: translateY(100%);
+          opacity: 0.5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 24px 0px 24px;
+          font-size: 18px;
+          line-height: 1.555;
+          color: $primarycolor;
+        }
+
+        .image-portfolio {
+          background: $primarycolor;
+          border: none;
+          width: 370px;
+          height: 294px;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: $color9;
+
+        .transition-container__portfolio {
+          transform: translateY(0px);
+          transition-duration: 500ms;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    &__description {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      padding: 20px 0px 6px 24px;
+    }
+
+    &__domain {
+      font-size: 16px;
+      line-height: 1.875;
+      color: $color7;
+      padding: 0px 0px 20px 24px;
+    }
+  }
+}

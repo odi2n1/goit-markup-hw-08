@@ -1,0 +1,203 @@
+@import "../utils/vars";
+
+.contact {
+  padding-top: 60px;
+  background: $color1;
+
+  .concentration {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &-wrapper {
+    &__credentials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &--color {
+        color: $secondarycolor;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 28px 0px 0px 0px;
+
+        .adress {
+          font-style: normal;
+          font-size: 14px;
+          line-height: 1.143;
+          text-decoration: none;
+          color: $primarycolor;
+        }
+      }
+    }
+
+    &__social {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0px 0px 0px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.143px;
+      text-transform: uppercase;
+      color: $primarycolor;
+      text-align: center;
+    }
+
+    &__icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 30px 0px 0px 0px;
+      gap: 10px;
+
+      li {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        align-items: center;
+
+        a {
+          color: #afb1b8;
+        }
+
+        svg {
+          fill: currentColor;
+
+          &:hover {
+            fill: $primarycolor;
+          }
+        }
+
+        &:hover {
+          background-color: $secondarycolor;
+          transition: $transition;
+          transition-duration: 250ms;
+        }
+      }
+    }
+    &__subscribe {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px 0px 0px 0px;
+    }
+
+    &__newsletter {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.143px;
+      text-transform: uppercase;
+      text-align: center;
+
+      color: $primarycolor;
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      &__mail {
+        width: 450px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: $color1;
+
+        &:hover {
+          border: 1px solid $secondarycolor;
+          cursor: pointer;
+        }
+      }
+
+      &__button {
+        width: 200px;
+        height: 50px;
+        background: $secondarycolor;
+        border-radius: 4px;
+        border: none;
+        color: $primarycolor;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: left;
+        padding-left: 43px;
+        line-height: 0.53;
+        position: relative;
+
+        .subscribe-icon {
+          position: absolute;
+          right: 28px;
+          bottom: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    .concentration {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .contact-wrapper__social {
+        padding: 0px 0px 0px 100px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    .concentration {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: 94px;
+      padding: 0px 0px 60px 0px;
+      .contact-wrapper__social {
+        padding: 0px 0px 0px 0px;
+      }
+    }
+  }
+
+  .contact-wrapper__credentials {
+    align-items: flex-start;
+    ul {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  .contact-wrapper__newsletter {
+    text-align: start;
+  }
+
+  .contact-wrapper-form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-wrapper__subscribe {
+    padding: 7px 0px 0px 0px;
+  }
+}
