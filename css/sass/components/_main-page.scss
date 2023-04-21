@@ -3,11 +3,7 @@
 .main-page {
   min-width: 480px;
   height: 480px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../../../images/background-M-480.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../../images/background-M-480.jpg);
   background-position: 50% 50%;
   background-color: $color1;
   background-size: cover;
@@ -19,11 +15,7 @@
 @media screen and (min-width: 768px) {
   .main-page {
     min-width: 768px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../../images/background-D-768.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../../images/background-D-768.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,11 +25,7 @@
 @media screen and (min-width: 1200px) {
   .main-page {
     min-width: 1000px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../../images/background.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../../images/background.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

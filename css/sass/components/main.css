@@ -474,7 +474,6 @@
   position: absolute;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  opacity: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -496,7 +495,6 @@
 .products .products-components__cards:hover .transition-container__portfolio {
   transform: translateY(0px);
   transition-duration: 500ms;
-  opacity: 0.5;
 }
 .products .products-components__description {
   font-weight: 700;
@@ -754,13 +752,12 @@
 .contact-wrapper__icons li svg {
   fill: currentColor;
 }
-.contact-wrapper__icons li svg:hover {
-  fill: #ffffff;
-}
+
 .contact-wrapper__icons li:hover {
   background-color: #2196f3;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+  fill: #ffffff;
 }
 .contact-wrapper__subscribe {
   display: flex;
@@ -786,6 +783,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
+  padding: 15px 0px 15px 16px;
 }
 .contact-wrapper-form__mail:hover {
   border: 1px solid #2196f3;
